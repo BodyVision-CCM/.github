@@ -95,7 +95,7 @@ flowchart TB
     end
 
     subgraph cloud["CLOUD — GKE · europe-west9"]
-        gw["<b>Gateway</b><br/>Nginx Ingress<br/><br/>Entrée unique, TLS, routage"]
+        gw["<b>Gateway</b><br/>Gateway API — gérée par GKE<br/><br/>Entrée unique, TLS, routage"]
 
         users["<b>Service Utilisateurs</b><br/>Python · FastAPI<br/><br/>Comptes, JWT RS256, JWKS,<br/>profil et morphologie<br/><i>HPA — CPU et mémoire</i>"]
 
